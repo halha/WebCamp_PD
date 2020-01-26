@@ -1,8 +1,19 @@
-# WebCamp_PD
-Web Design by Tim PD (Hiedescom 2019 Final)
+# WebCamp
 
+### About Event
 
-![alt text](https://github.com/HammamAlHakim/WebCamp_PD/blob/master/Index.png)
-![alt text](https://github.com/HammamAlHakim/WebCamp_PD/blob/master/Berkemah-1.png)
-![alt text](https://github.com/HammamAlHakim/WebCamp_PD/blob/master/Berkemah-2.png)
-![alt text](https://github.com/HammamAlHakim/WebCamp_PD/blob/master/Gallery.png)
+Event Name : Himasi Web Design Competition 2019 / HIEDESCOM 2019 (Final)
+
+Event Location : Airlangga University Surabaya, Indonesia
+
+Event Type : Web Design
+
+### About Team
+
+Team name : Tim PD
+
+Teammate :
+
+    1. Dimas Angkasa Nurindra
+    2. Hammam Al-Hakim
+    3. Maulana Hilmi Arkan
