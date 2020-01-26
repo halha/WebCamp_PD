@@ -1,0 +1,201 @@
+:root {
+    --borderBottom: #d8dde0;
+    --black: #000;
+    --border: #d8dde0;
+    --white: #ffffff;
+    --white1: #f2f2f2;
+    --lightGreen: #63a674;
+    --darkGreen: #397352;
+    --grey: #757575;
+    --background: #f5f6f7;
+    --bgBox: #fafbfc;
+    --borderBox: #e8edee;
+    --gradient1: #397352;
+    --gradient2: #0d2e35;
+}
+
+@font-face {
+    font-family: "Qanelas-ExtraBold";
+    src: url("../font/Qanelas-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Qanelas-UltraLight";
+    src: url("../font/Qanelas-UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoSans-Bold";
+    src: url("../font/NotoSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoSans-Regular";
+    src: url("../font/NotoSans-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--borderBottom);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: var(--white);
+}
+
+nav .logo {
+    font-size: 2.1em;
+    line-height: 55px;
+    font-family: "Qanelas-ExtraBold", sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav .logo span {
+    font-family: "Qanelas-UltraLight", sans-serif;
+}
+
+nav .logo img {
+    height: 50%;
+    margin-right: 10px;
+}
+
+nav .show {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background: var(--black);
+    float: right;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+nav .show:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+}
+
+nav .show:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul div {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 5em;
+    line-height: 55px;
+}
+
+nav ul li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--black);
+    font-family: "NotoSans-Regular", sans-serif;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--lightGreen);
+}
+
+nav ul li a.button-green {
+    color: var(--white);
+    background-color: var(--lightGreen);
+    display: inline-block;
+    padding: 0 30px;
+    border-radius: 5px;
+    font-family: "NotoSans-Bold", sans-serif;
+}
+
+nav ul .hide {
+    font-size: 40px;
+}
+
+nav .show,
+nav ul .hide {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--white);
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        z-index: 999;
+        -webkit-transition: 0.7s;
+        transition: 0.7s;
+    }
+
+    nav ul {
+        display: block;
+        padding: 20px 0;
+    }
+
+    nav ul div {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -80%);
+        display: block;
+    }
+
+    nav ul li {
+        margin-top: 10vh;
+    }
+
+    nav .show,
+    nav ul .hide {
+        display: block;
+    }
+
+    nav ul .hide {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    nav ul li a.button-green {
+        width: 80%;
+    }
+}

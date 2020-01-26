@@ -1,0 +1,126 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: var(--background);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer::after {
+    content: "";
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(50%, -50%);
+    background: url("../img/kanan-01.svg") no-repeat center;
+    background-size: cover;
+}
+
+footer .col-1 {
+    width: 30%;
+    height: 95%;
+    border-right: 2px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .col-1 .logo {
+    width: 30%;
+    margin: auto;
+}
+
+footer .col-1 .logo img {
+    width: 100%;
+}
+
+footer .col-2 {
+    width: 70%;
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .col-2 .share-box,
+footer .col-2 .galery-box,
+footer .col-2 .copy {
+    margin: auto;
+}
+
+footer .col-2 .share-box h4,
+footer .col-2 .galery-box h4 {
+    color: var(--darkGreen);
+    font-size: 1.25em;
+    font-family: "NotoSans-Bold", sans-serif;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+footer .col-2 .share-box .item {
+    display: flex;
+    text-decoration: none;
+    font-family: "NotoSans-Regular", sans-serif;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+footer .col-2 .share-box .item .icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+footer .col-2 .galery-box {
+    width: 20%;
+}
+
+footer .col-2 .copy {
+    width: 20%;
+    margin-right: 15%;
+    font-family: "NotoSans-Regular", sans-serif;
+}
+
+footer .col-2 .galery-box a {
+    display: block;
+    margin-bottom: 20px;
+    font-family: "NotoSans-Regular", sans-serif;
+    text-decoration: none;
+    color: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        display: block;
+    }
+
+    footer::after {
+        background: unset;
+    }
+
+    footer .col-1,
+    footer .col-2 {
+        width: 100%;
+        height: 50%;
+    }
+
+    footer .col-1 {
+        border: none;
+    }
+
+    footer .col-2 .share-box,
+    footer .col-2 .galery-box {
+        width: 50%;
+        text-align: center;
+    }
+
+    footer .col-2 .share-box .item {
+        width: 30%;
+        margin: 0 auto 20px;
+    }
+}

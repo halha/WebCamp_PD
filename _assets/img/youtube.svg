@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="335.24" height="240.47" viewBox="0 0 335.24 240.47">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+
+      .cls-1 {
+        stroke: #52545c;
+      }
+
+      .cls-2 {
+        stroke: #62a574;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>youtube</title>
+  <rect class="cls-1" x="8" y="8" width="319.24" height="224.47" rx="43.57"/>
+  <polygon class="cls-2" points="135.7 63.13 226.87 123.23 135.7 183.34 135.7 63.13"/>
+</svg>
